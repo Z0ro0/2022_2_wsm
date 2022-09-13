@@ -1,9 +1,23 @@
+h1{
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;  /* width 앞에 max 붙이면 반응형 됨 */
+}
 .grid-container{
     display: grid;
     grid-template-columns: 80px repeat(5,1fr);
+    max-width: 800px;  /* width 앞에 max 붙이면 반응형 됨 */
+    height: 400px;
+}
+.days-of-the-week{
+    background-color: rgb(225, 250, 255);
+    color: rgb(4, 4, 69);
 }
 .grid-item{
     border: 1px solid black;
+    display: flex;
+    justify-content: center; /* 위에서 센터 */
+    align-items: center; /* 중앙으로 배치 */
 }
 .grid-item:nth-child(9){/*자료구조*/
     grid-row-start: 2;
@@ -33,4 +47,7 @@
 }
 .grid-item:nth-child(36){
     grid-area: 7/4/9/5;
+}
+.blank{
+    background-color: rgb(221, 239, 255);
 }
