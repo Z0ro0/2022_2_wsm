@@ -18,3 +18,19 @@
 .grid-item:nth-child(18){
     grid-area: 4 / 2 / 6 / 3;
 }
+.grid-item:nth-child(20){
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+}
+.grid-item:nth-child(31){
+    grid-area: 6/5/8/6;
+}
+.grid-item:nth-child(32){
+    grid-area: 6/6/8/7;
+}
+.grid-item:nth-child(35){
+    grid-area: 7/3/9/4;
+}
+.grid-item:nth-child(36){
+    grid-area: 7/4/9/5;
+}
