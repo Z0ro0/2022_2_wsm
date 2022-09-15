@@ -18,3 +18,6 @@ h1{
 .days-of-the-week{
     color: rgb(49, 49, 49);
 }
+.first{
+    grid-column-start: 5;
+}
