@@ -10,14 +10,48 @@ h1{
     height: 400px;
 }
 .days-of-the-week{
-    background-color: rgb(225, 250, 255);
-    color: rgb(4, 4, 69);
+    background-color: rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
 }
 .grid-item{
-    border: 1px solid black;
+    border: 1px solid rgb(236, 69, 69);
     display: flex;
     justify-content: center; /* 위에서 센터 */
     align-items: center; /* 중앙으로 배치 */
+}
+
+/* 1교시, 2교시... 배경 컬러 바꾸기 */
+.grid-item:nth-child(7){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+.grid-item:nth-child(13){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+.grid-item:nth-child(18){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+.grid-item:nth-child(24){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+.grid-item:nth-child(27){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+.grid-item:nth-child(33){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+.grid-item:nth-child(36){
+    background-color:  rgb(255, 201, 214);
+    color: rgb(0, 0, 57);
+}
+
+.grid-item:nth-child(1){
+    border: none;
 }
 .grid-item:nth-child(11){
     /* php */
