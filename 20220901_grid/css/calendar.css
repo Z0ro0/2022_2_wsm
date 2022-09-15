@@ -9,8 +9,12 @@ h1{
     height: 400px;
     grid-template-columns: repeat(7, 1fr);
 }
-.gird-item{
+.grid-item{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(155, 155, 155);
+}
+.days-of-the-week{
+    color: rgb(49, 49, 49);
 }
