@@ -25,8 +25,6 @@ function test(){// 현재 년, 월, 일 알아내기
     let days = ['일','월','화','수','목','금','토'];
     console.log(`${year}년 ${month}월 ${date}일 ${days[day]}요일`);
     //1일 : (오늘 연, 오늘 월, 1) 객체 구하자
-    year = 2005;
-    month = 8;
     let firstDate = new Date(year, month - 1, 1);
     //그 객체 요일 구하자
     let firstDay = firstDate.getDay();
