@@ -53,7 +53,7 @@ const prevMonth = () => {
 const nextMonth = () => {
     //다음 월 구하자
     month++;
-    if(month==12){
+    if(month==13){
         year++;
         month = 1;
     }
