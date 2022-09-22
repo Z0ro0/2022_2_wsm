@@ -6,6 +6,7 @@
 #prev_btn, #next_btn{
     border: 2px solid rgb(208, 208, 208);
     border-radius: 8px;
+    padding: 8px;
 }
 #calendar{
     max-width: 800px;
