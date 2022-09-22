@@ -37,6 +37,21 @@ const setCalendar = (year, month) => {
     firstDateDiv.style.gridColumnStart = firstDay + 1;
 }
 
+//prevMonth 함수
+const preMonth = () =>{
+    //다음 월 구하자
+    month--;
+    //setcalendar(년, 구한 월);
+    setCalendar(year, month);
+}
+
+//nextMonth 함수
+const nextMonth = () =>{
+    
+}
+//prev버튼 누르면 pre Month 함수 설정
+
+//next버튼 누르면 nextMonth 함수 설정
 // 오늘 구하자
 let today = new Date();
 // 오늘 년 구하자
