@@ -16,6 +16,14 @@
 
 const KEY = "f9f06af16f3449b6860a8b365af1f232";
 const ATPT_OFCDC_SC_CODE = "B10";
-const SD_SCHUL_CODE = "7010569";
+const c = "7010569";
 let MMEAL_SC_CODE = 2;
 let MLSV_YMD = "20220927";
+
+let url = `https://open.neis.go.kr/hub/mealServiceDietInfo?`
+            +`KEYE=${KEY}`
+            +`ATPT_OFCDC_SC_CODE=${ATPT_OFCDC_SC_CODE}`
+            +`SD_SCHUL_CODE=${SD_SCHUL_CODE}`
+            +`MMEAL_SC_CODE=${MMEAL_SC_CODE}`
+            +`MLSV_YMD=${MLSV_YMD}`;
+console.log(url);
