@@ -89,16 +89,23 @@ const urlToJSON = (url) => {
                     //알레르기 식품 표시 삭제하자
                     breakfastData = breakfastData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
                     breakfast.innerHTML = breakfastData;
+
+
                 } catch {
                     breakfast.innerHTML = "없음";
                 }
                 try {
-                    lunch.innerHTML = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM'];
+                    let lunchData = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM'];
+                    lunchData = lunchData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
+                    lunch.innerHTML = lunchData;
                 } catch {
                     lunch.innerHTML = "없음";
                 }
                 try {
-                    dinner.innerHTML = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM'];
+                    let dinnerData = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM'];
+                    dinnerData = dinnerData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
+                    dinner.innerHTML = dinnerData;
+
                 } catch {
                     dinner.innerHTML = "없음";
                 }
