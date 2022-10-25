@@ -25,6 +25,11 @@ main {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
+.date-grid-container .grid-item:hover {
+    border-radius: 10px;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
 .grid-item {
     display: flex;
     justify-content: center;
