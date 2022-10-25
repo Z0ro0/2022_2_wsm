@@ -86,7 +86,9 @@ const urlToJSON = (url) => {
                 //json -> HTML
                 try {
                     let breakfastData = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
-                    breakfast.innerHTML = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
+                    //알레르기 식품 표시 삭제하자
+                    breakfastData = breakfastData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
+                    breakfast.innerHTML = breakfastData;
                 } catch {
                     breakfast.innerHTML = "없음";
                 }
