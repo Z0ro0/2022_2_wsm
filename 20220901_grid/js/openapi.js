@@ -86,26 +86,29 @@ const urlToJSON = (url) => {
                 //json -> HTML
                 try {
                     let breakfastData = json['mealServiceDietInfo'][1]['row'][0]['DDISH_NM'];
-                    //알레르기 식품 표시 삭제하자
-                    breakfastData = breakfastData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
+                    //(5.13.) 삭제하자
+                    breakfastData = breakfastData.replace(/\([0-9\.]*\)/g, "");  //정규표현식: (문자 숫자나 .문자 )문자
+                    // (             \(
+                    // 숫자 한글자    [0123456789]
+                    // .             \.
+                    // 0~n개         *
+                    // )             \)
+                    // 글로벌         g
                     breakfast.innerHTML = breakfastData;
-
-
                 } catch {
                     breakfast.innerHTML = "없음";
                 }
                 try {
-                    let lunchData = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM'];
-                    lunchData = lunchData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
+                    let lunchData = json['mealServiceDietInfo'][1]['row'][1]['DDISH_NM']
+                    lunchData = lunchData.replace(/\([0-9\.]*\)/g, "");
                     lunch.innerHTML = lunchData;
                 } catch {
                     lunch.innerHTML = "없음";
-                }
+                }           
                 try {
                     let dinnerData = json['mealServiceDietInfo'][1]['row'][2]['DDISH_NM'];
-                    dinnerData = dinnerData.replace(/\([0123456789\.]*\)/g,""); //정규표현식: (문자 숫자나, 문자)문ㅏ
+                    dinnerData = dinnerData.replace(/\([0-9\.]*\)/g, "");
                     dinner.innerHTML = dinnerData;
-
                 } catch {
                     dinner.innerHTML = "없음";
                 }
