@@ -1,3 +1,16 @@
 *{
     border: 1px solid black;
 }
+.grid-container{
+    display: grid;
+    grid-template-areas: "nav main sidebar";
+}
+.nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
